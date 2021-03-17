@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calcular IMC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	
+    <form action="#" th:action="@{/calcular}" th:object="${persona}" method="post">
+    	<fieldset>
+        <legend>Datos de la persona</legend>
+        <table>
+            <tr>
+                <td><label >Nombre: </label></td>
+                <td><input type="text" th:field="*{nombre}" /></td>
+            </tr>
+             <tr>
+                <td><label >Edad: </label></td>
+                <td><input type="text" th:field="*{edad}" /></td>
+            </tr>
+             <tr>
+                <td><label >Sexo: </label></td>
+                <td><input type="text" th:field="*{sexo}" /></td>
+            </tr>
+             <tr>
+                <td><label >Peso: </label></td>
+                <td><input type="text" th:field="*{peso}" /></td>
+            </tr>
+            <tr>
+                <td><label >Altura: </label></td>
+                <td><input type="text" th:field="*{altura}" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit">Calcular IMC...</button>
+                </td>
+            </tr> 
+        </table>
+    </fieldset>
+</form>
+    
+</body>
+</html>

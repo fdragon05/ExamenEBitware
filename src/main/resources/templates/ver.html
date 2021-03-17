@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Resultados IMC</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+		
+		<fieldset>
+        <legend>Resultado calculo IMC</legend>
+        <h2>
+            <span th:text="'IMC, ' + ${resultadoIMC}"></span>
+        </h2>
+    	</fieldset>	
+    	<fieldset>
+        <legend>Resultado de la edad</legend>
+        <h2>
+            <span th:text="'validar edad, ' + ${mayorMenorEdad}"></span>
+        </h2>
+    	</fieldset>	
+    	<fieldset>
+        <legend>Resultados de la persona</legend>
+        <h2>
+            <span th:text="'Metodo toString, ' + ${informacion}"></span>
+        </h2>
+    	</fieldset>
+    
+</body>
+</html>
